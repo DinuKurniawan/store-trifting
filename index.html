@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Thrift Corner — Vintage & Streetwear Orisinal Bandung</title>
+<meta name="description" content="Thrift Corner Bandung — Kurasi vintage & streetwear orisinal, 1 of 1, siap kirim ke seluruh Indonesia." />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%2325331D'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%23FF915A' font-family='sans-serif' font-weight='bold'>T</text></svg>" />
+<style type="text/tailwindcss">
+@theme {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
+</style>
+<script>document.documentElement.classList.add('js');</script>
+<style>
+  body{font-family:"Plus Jakarta Sans",sans-serif}
+  .font-display{font-family:"Space Grotesk",sans-serif}
+  .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 24;vertical-align:middle}
+  .material-symbols-outlined.fill{font-variation-settings:'FILL' 1,'wght' 500,'GRAD' 0,'opsz' 24}
+  html{scroll-behavior:smooth;scroll-padding-top:96px}
+  .no-scrollbar::-webkit-scrollbar{display:none}
+  .no-scrollbar{scrollbar-width:none}
+  @keyframes pulse-dot{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.6);opacity:.5}}
+  .pulse-dot{animation:pulse-dot 1.6s ease-in-out infinite}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+  dialog::backdrop{background:rgba(20,28,17,.65);backdrop-filter:blur(6px)}
+  .line-clamp-2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  /* Koleksi — fokus tombol kartu */
+  .prod-btn:focus-visible,[data-open]:focus-visible{outline:3px solid #25331D;outline-offset:2px}
+  /* ===== Animasi scroll halus (hanya saat JS aktif; tanpa JS konten tetap terlihat) ===== */
+  #siteHeader{transition:height .3s ease,box-shadow .3s ease,background-color .3s ease}
+  #siteHeader.scrolled{height:68px;box-shadow:0 10px 30px -12px rgba(37,51,29,.25)}
+  .nav-link{transition:background-color .3s ease,color .3s ease}
+  #scrollProgress{position:fixed;top:0;left:0;right:0;height:3px;background:#FF915A;transform-origin:left;transform:scaleX(0);z-index:60}
+  #heroBg{will-change:transform}
+  .js .rv{opacity:0;transform:translateY(24px);transition:opacity .6s ease-out,transform .6s ease-out,box-shadow .3s ease;will-change:opacity,transform}
+  .js .rv.in{opacity:1;transform:none}
+  .js .rv-left,.js .rv-right{opacity:0;transform:translateY(24px);transition:opacity .6s ease-out,transform .6s ease-out;will-change:opacity,transform}
+  .js .rv-left.in,.js .rv-right.in{opacity:1;transform:none}
+  @media(min-width:1024px){
+    .js .rv-left{transform:translateX(-32px)}
+    .js .rv-right{transform:translateX(32px)}
+  }
+  .js .rv-pop{opacity:0;transform:scale(.6);transition:opacity .45s ease-out,transform .45s ease-out;will-change:opacity,transform}
+  .js .rv-pop.in{opacity:1;transform:scale(1)}
+  .js .step-num{opacity:0;transform:scale(.5);transition:opacity .4s ease-out,transform .4s cubic-bezier(.34,1.56,.64,1)}
+  .js .step-card.in .step-num{opacity:1;transform:scale(1)}
+  .js .hero-it{opacity:0;transform:translateY(24px);transition:opacity .6s ease-out,transform .6s ease-out;will-change:opacity,transform}
+  .js .hero-it.in{opacity:1;transform:none}
+  .js #floatWrap{opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .4s ease-out,transform .4s ease-out}
+  .js #floatWrap.show{opacity:1;transform:none;pointer-events:auto}
+  .js .prod-fast{transition-duration:.2s !important}
+  @media (prefers-reduced-motion:reduce){
+    .js .rv,.js .rv-left,.js .rv-right,.js .rv-pop,.js .hero-it,.js .step-num{opacity:1 !important;transform:none !important;transition:none !important}
+    .js #floatWrap{opacity:1 !important;transform:none !important;transition:none !important;pointer-events:auto}
+    #siteHeader,.nav-link{transition:none}
+    html{scroll-behavior:auto}
+    #heroBg{will-change:auto}
+  }
+  @media (prefers-reduced-motion:reduce){}
+</style>
+</head>
+<body class="bg-[#F6FBEF] text-[#181D16] antialiased">
+<div id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header id="siteHeader" class="sticky top-0 z-50 h-20 bg-[#F6FBEF]/85 backdrop-blur-xl border-b border-[#E5EADF]">
+  <div class="max-w-[1360px] mx-auto h-full px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+    <a href="#beranda" class="flex items-center gap-2.5 shrink-0">
+      <span class="w-10 h-10 rounded-2xl bg-[#25331D] text-[#FF915A] grid place-items-center font-display font-bold text-xl">T</span>
+      <span class="font-display font-bold tracking-tight text-lg leading-none">THRIFT<br class="sm:hidden"> CORNER</span>
+    </a>
+    <nav id="desktopNav" class="hidden lg:flex items-center gap-1 text-sm font-semibold">
+      <a href="#beranda" data-nav="beranda" class="nav-link px-4 py-2 rounded-full bg-[#D6E8C7]">Beranda</a>
+      <a href="#kategori" data-nav="kategori" class="nav-link px-4 py-2 rounded-full hover:bg-[#EBF0E4]">Kategori</a>
+      <a href="#koleksi" data-nav="koleksi" class="nav-link px-4 py-2 rounded-full hover:bg-[#EBF0E4]">Koleksi</a>
+      <a href="#cara-belanja" data-nav="cara-belanja" class="nav-link px-4 py-2 rounded-full hover:bg-[#EBF0E4]">Cara Belanja</a>
+      <a href="#tentang" data-nav="tentang" class="nav-link px-4 py-2 rounded-full hover:bg-[#EBF0E4]">Tentang Kami</a>
+      <a href="#testimoni" data-nav="testimoni" class="nav-link px-4 py-2 rounded-full hover:bg-[#EBF0E4]">Testimoni</a>
+      <a href="#kontak" data-nav="kontak" class="nav-link px-4 py-2 rounded-full hover:bg-[#EBF0E4]">Kontak</a>
+    </nav>
+    <div class="flex items-center gap-2.5">
+      <a href="https://wa.me/6281234567890?text=Halo%20Thrift%20Corner!%20Saya%20mau%20tanya%20stok%20koleksi%20terbaru." target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-2 bg-[#25331D] text-white text-sm font-semibold pl-4 pr-5 py-2.5 rounded-full hover:bg-[#3B4A32] transition min-h-[44px]">
+        <span class="material-symbols-outlined text-[20px]">chat</span> Chat WhatsApp
+      </a>
+      <button id="menuBtn" aria-label="Menu" class="lg:hidden w-11 h-11 rounded-full bg-[#25331D] text-white grid place-items-center min-h-[44px] min-w-[44px]">
+        <span class="material-symbols-outlined" id="menuIcon">menu</span>
+      </button>
+    </div>
+  </div>
+  <div id="mobileDrawer" class="lg:hidden hidden border-t border-[#E5EADF] bg-[#F6FBEF]/95 backdrop-blur-xl">
+    <nav class="px-4 py-3 grid gap-1 text-[15px] font-semibold">
+      <a href="#beranda" class="px-4 py-3 rounded-2xl hover:bg-[#EBF0E4]">Beranda</a>
+      <a href="#kategori" class="px-4 py-3 rounded-2xl hover:bg-[#EBF0E4]">Kategori</a>
+      <a href="#koleksi" class="px-4 py-3 rounded-2xl hover:bg-[#EBF0E4]">Koleksi</a>
+      <a href="#cara-belanja" class="px-4 py-3 rounded-2xl hover:bg-[#EBF0E4]">Cara Belanja</a>
+      <a href="#tentang" class="px-4 py-3 rounded-2xl hover:bg-[#EBF0E4]">Tentang Kami</a>
+      <a href="#testimoni" class="px-4 py-3 rounded-2xl hover:bg-[#EBF0E4]">Testimoni</a>
+      <a href="#kontak" class="px-4 py-3 rounded-2xl hover:bg-[#EBF0E4]">Kontak</a>
+      <a href="https://wa.me/6281234567890?text=Halo%20Thrift%20Corner!%20Saya%20mau%20tanya%20stok." target="_blank" rel="noopener" class="mt-2 inline-flex items-center justify-center gap-2 bg-[#25331D] text-white px-4 py-3.5 rounded-full"><span class="material-symbols-outlined">chat</span> Chat WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ============ 1. BERANDA ============ -->
+<section id="beranda" class="bg-[#F6FBEF]">
+  <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12 lg:pt-10 lg:pb-16">
+    <div class="relative overflow-hidden rounded-[24px] bg-[#25331D] text-white shadow-[0_24px_60px_-20px_rgba(37,51,29,.5)]">
+      <img id="heroBg" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1600&auto=format&fit=crop" alt="Anak muda Indonesia bergaya vintage streetwear 90an" class="absolute inset-0 w-full h-full object-cover opacity-40" loading="eager" />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#25331D] via-[#25331D]/70 to-transparent"></div>
+      <div class="relative px-6 py-12 sm:p-12 lg:p-16 max-w-3xl">
+        <span class="hero-it inline-flex items-center gap-2 bg-white/15 backdrop-blur border border-white/20 text-[12px] font-display font-semibold uppercase tracking-[0.14em] px-4 py-2 rounded-full">
+          <span class="material-symbols-outlined text-[18px] text-[#D6E8C7]">verified</span> Kurasi Vintage & Streetwear Orisinal
+        </span>
+        <h1 class="hero-it font-display font-bold uppercase leading-[1.02] tracking-tight text-[36px] sm:text-[48px] lg:text-[56px] mt-5">Gaya Unik,<br><span class="text-[#FF915A]">Harga Bersahabat</span></h1>
+        <p class="hero-it mt-4 text-white/85 text-[15px] sm:text-base max-w-xl leading-relaxed">Thrift pilihan berkualitas, dikurasi satu per satu. Dapatkan pakaian langka berpola autentik yang siap menunjang karakter gaya sehari-harimu.</p>
+        <div class="hero-it mt-7 flex flex-wrap gap-3">
+          <a href="#koleksi" class="inline-flex items-center gap-2 bg-[#F6FBEF] text-[#25331D] font-bold text-sm px-6 py-3.5 rounded-full hover:bg-white transition min-h-[48px]">Lihat Koleksi <span class="material-symbols-outlined">arrow_downward</span></a>
+          <a href="https://wa.me/6281234567890?text=Halo%20Thrift%20Corner!%20Saya%20mau%20tanya%20koleksi%20vintage." target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#FF915A] text-[#25331D] font-bold text-sm px-6 py-3.5 rounded-full hover:brightness-110 transition min-h-[48px]"><span class="material-symbols-outlined">chat</span> Chat via WhatsApp</a>
+        </div>
+        <div class="hero-it mt-8 flex flex-wrap gap-2.5">
+          <span class="inline-flex items-center gap-2 bg-black/30 backdrop-blur border border-white/15 text-[13px] font-semibold px-4 py-2.5 rounded-full"><span class="material-symbols-outlined text-[18px] text-[#D6E8C7]">fact_check</span> Barang Dicek Kualitas</span>
+          <span class="inline-flex items-center gap-2 bg-black/30 backdrop-blur border border-white/15 text-[13px] font-semibold px-4 py-2.5 rounded-full"><span class="material-symbols-outlined text-[18px] text-[#FF915A]">fingerprint</span> Stok Terbatas (1 of 1)</span>
+          <span class="inline-flex items-center gap-2 bg-black/30 backdrop-blur border border-white/15 text-[13px] font-semibold px-4 py-2.5 rounded-full"><span class="material-symbols-outlined text-[18px] text-[#D6E8C7]">local_shipping</span> Kirim ke Seluruh RI</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. KATEGORI ============ -->
+<section id="kategori" class="bg-[#F1F5EA]">
+  <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
+    <div data-rv class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-8">
+      <div>
+        <p class="font-display text-[12px] font-bold uppercase tracking-[0.22em] text-[#9B4413]">Kategori Pilihan</p>
+        <h2 class="font-display font-bold tracking-tight text-[28px] lg:text-[32px] mt-2">Jelajahi Gaya Favoritmu</h2>
+      </div>
+      <p class="text-[#444840] text-[15px] max-w-md lg:text-right">Enam rak kurasi andalan kami — dari tee harian sampai outer statement. Semua sudah dicuci dan siap pakai.</p>
+    </div>
+    <div data-stagger class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4">
+      <!-- card template x6 -->
+      <a href="#koleksi" class="kat-card group bg-white rounded-[20px] overflow-hidden shadow-[0_8px_24px_-12px_rgba(37,51,29,.25)] hover:shadow-[0_20px_40px_-16px_rgba(37,51,29,.35)] transition">
+        <div class="relative aspect-[4/5] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=600&auto=format&fit=crop" alt="Atasan thrift" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+          <span class="absolute top-3 left-3 bg-[#25331D] text-white text-[11px] font-display font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">48+ Item</span>
+        </div>
+        <div class="p-4"><h3 class="font-display font-bold text-[18px] leading-tight">Atasan</h3><p class="text-[13px] text-[#75786F] mt-0.5">Tee, Flannel, Polo</p></div>
+      </a>
+      <a href="#koleksi" class="kat-card group bg-white rounded-[20px] overflow-hidden shadow-[0_8px_24px_-12px_rgba(37,51,29,.25)] hover:shadow-[0_20px_40px_-16px_rgba(37,51,29,.35)] transition">
+        <div class="relative aspect-[4/5] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=600&auto=format&fit=crop" alt="Bawahan denim" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+          <span class="absolute top-3 left-3 bg-[#25331D] text-white text-[11px] font-display font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">36+ Item</span>
+        </div>
+        <div class="p-4"><h3 class="font-display font-bold text-[18px] leading-tight">Bawahan</h3><p class="text-[13px] text-[#75786F] mt-0.5">Cargo, Denim, Korduroi</p></div>
+      </a>
+      <a href="#koleksi" class="kat-card group bg-white rounded-[20px] overflow-hidden shadow-[0_8px_24px_-12px_rgba(37,51,29,.25)] hover:shadow-[0_20px_40px_-16px_rgba(37,51,29,.35)] transition">
+        <div class="relative aspect-[4/5] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=600&auto=format&fit=crop" alt="Jaket dan outer" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+          <span class="absolute top-3 left-3 bg-[#25331D] text-white text-[11px] font-display font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">29+ Item</span>
+        </div>
+        <div class="p-4"><h3 class="font-display font-bold text-[18px] leading-tight">Jaket & Outer</h3><p class="text-[13px] text-[#75786F] mt-0.5">Bomber, Varsity, Zip</p></div>
+      </a>
+      <a href="#koleksi" class="kat-card group bg-white rounded-[20px] overflow-hidden shadow-[0_8px_24px_-12px_rgba(37,51,29,.25)] hover:shadow-[0_20px_40px_-16px_rgba(37,51,29,.35)] transition">
+        <div class="relative aspect-[4/5] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop" alt="Dress vintage" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+          <span class="absolute top-3 left-3 bg-[#25331D] text-white text-[11px] font-display font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">22+ Item</span>
+        </div>
+        <div class="p-4"><h3 class="font-display font-bold text-[18px] leading-tight">Dress</h3><p class="text-[13px] text-[#75786F] mt-0.5">Cottage, Floral, Slip</p></div>
+      </a>
+      <a href="#koleksi" class="kat-card group bg-white rounded-[20px] overflow-hidden shadow-[0_8px_24px_-12px_rgba(37,51,29,.25)] hover:shadow-[0_20px_40px_-16px_rgba(37,51,29,.35)] transition">
+        <div class="relative aspect-[4/5] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=600&auto=format&fit=crop" alt="Tas thrift" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+          <span class="absolute top-3 left-3 bg-[#25331D] text-white text-[11px] font-display font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">18+ Item</span>
+        </div>
+        <div class="p-4"><h3 class="font-display font-bold text-[18px] leading-tight">Tas</h3><p class="text-[13px] text-[#75786F] mt-0.5">Tote, Tactical Sling</p></div>
+      </a>
+      <a href="#koleksi" class="kat-card group bg-white rounded-[20px] overflow-hidden shadow-[0_8px_24px_-12px_rgba(37,51,29,.25)] hover:shadow-[0_20px_40px_-16px_rgba(37,51,29,.35)] transition">
+        <div class="relative aspect-[4/5] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1521369909029-2afed882baee?q=80&w=600&auto=format&fit=crop" alt="Aksesoris" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+          <span class="absolute top-3 left-3 bg-[#25331D] text-white text-[11px] font-display font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">40+ Item</span>
+        </div>
+        <div class="p-4"><h3 class="font-display font-bold text-[18px] leading-tight">Aksesoris</h3><p class="text-[13px] text-[#75786F] mt-0.5">Topi, Sabuk, Bandana</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. KOLEKSI ============ -->
+<section id="koleksi" class="bg-[#F6FBEF]">
+  <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
+    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-8">
+      <div data-rv class="max-w-xl">
+        <p class="font-display text-[12px] font-bold uppercase tracking-[0.22em] text-[#9B4413]">Drop Minggu Ini</p>
+        <h2 class="font-display font-bold tracking-tight text-[28px] lg:text-[32px] mt-2">Koleksi Terbaru Siap Kirim</h2>
+        <p class="text-[#444840] text-[15px] mt-2">Setiap item hanya ada 1 stok (1 of 1). Siapa cepat dia dapat!</p>
+      </div>
+      <div id="filterTabs" class="flex flex-wrap gap-2">
+        <button data-filter="semua" class="filter-tab px-5 py-2.5 rounded-full text-sm font-bold bg-[#25331D] text-white min-h-[44px]">Semua</button>
+        <button data-filter="outerwear" class="filter-tab px-5 py-2.5 rounded-full text-sm font-bold bg-white border border-[#C5C8BD] hover:border-[#25331D] min-h-[44px]">Outerwear</button>
+        <button data-filter="tshirt" class="filter-tab px-5 py-2.5 rounded-full text-sm font-bold bg-white border border-[#C5C8BD] hover:border-[#25331D] min-h-[44px]">Vintage T-Shirt</button>
+        <button data-filter="celana" class="filter-tab px-5 py-2.5 rounded-full text-sm font-bold bg-white border border-[#C5C8BD] hover:border-[#25331D] min-h-[44px]">Celana</button>
+        <button data-filter="dress" class="filter-tab px-5 py-2.5 rounded-full text-sm font-bold bg-white border border-[#C5C8BD] hover:border-[#25331D] min-h-[44px]">Dress & Tops</button>
+      </div>
+    </div>
+    <div id="productGrid" class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6"></div>
+    <p id="emptyState" class="hidden text-center text-[#75786F] py-10">Belum ada item di kategori ini minggu ini. Coba kategori lain ya!</p>
+    <div class="text-center mt-10">
+      <a href="https://instagram.com/thriftcorner.id" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white border border-[#C5C8BD] font-bold text-sm px-7 py-3.5 rounded-full hover:border-[#25331D] hover:shadow-lg transition min-h-[48px]">
+        <span class="material-symbols-outlined">photo_camera</span> Lihat Semua Drop di Instagram @thriftcorner.id
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. CARA BELANJA ============ -->
+<section id="cara-belanja" class="bg-[#F1F5EA]">
+  <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
+    <div data-rv class="text-center max-w-xl mx-auto mb-10">
+      <p class="font-display text-[12px] font-bold uppercase tracking-[0.22em] text-[#9B4413]">Panduan Santai</p>
+      <h2 class="font-display font-bold tracking-tight text-[28px] lg:text-[32px] mt-2">4 Langkah Mudah Belanja Thrift</h2>
+    </div>
+    <div data-stagger data-steps class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="step-card bg-white rounded-[20px] p-6 shadow-[0_8px_24px_-12px_rgba(37,51,29,.25)]">
+        <span class="step-num w-11 h-11 rounded-xl bg-[#25331D] text-white font-display font-bold grid place-items-center text-lg">1</span>
+        <span class="material-symbols-outlined text-[32px] mt-4 text-[#25331D]">search_check</span>
+        <h3 class="font-display font-bold text-[18px] mt-2">Pilih Barang</h3>
+        <p class="text-sm text-[#444840] mt-1.5 leading-relaxed">Telusuri koleksi, cek tabel ukuran presisi dan foto asli tiap sudut barang.</p>
+      </div>
+      <div class="step-card bg-white rounded-[20px] p-6 shadow-[0_8px_24px_-12px_rgba(37,51,29,.25)]">
+        <span class="step-num w-11 h-11 rounded-xl bg-[#FF915A] text-[#25331D] font-display font-bold grid place-items-center text-lg">2</span>
+        <span class="material-symbols-outlined text-[32px] mt-4 text-[#9B4413]">chat</span>
+        <h3 class="font-display font-bold text-[18px] mt-2">Chat Admin via WA</h3>
+        <p class="text-sm text-[#444840] mt-1.5 leading-relaxed">Klik “Beli via WhatsApp”, admin Bandung fast respon 09.00–21.00 WIB.</p>
+      </div>
+      <div class="step-card bg-white rounded-[20px] p-6 shadow-[0_8px_24px_-12px_rgba(37,51,29,.25)]">
+        <span class="step-num w-11 h-11 rounded-xl bg-[#25331D] text-white font-display font-bold grid place-items-center text-lg">3</span>
+        <span class="material-symbols-outlined text-[32px] mt-4 text-[#25331D]">qr_code_2</span>
+        <h3 class="font-display font-bold text-[18px] mt-2">Transfer Pembayaran</h3>
+        <p class="text-sm text-[#444840] mt-1.5 leading-relaxed">BCA, Mandiri, QRIS, GoPay, ShopeePay. Amankan stok max 1×24 jam.</p>
+      </div>
+      <div class="step-card bg-white rounded-[20px] p-6 shadow-[0_8px_24px_-12px_rgba(37,51,29,.25)]">
+        <span class="step-num w-11 h-11 rounded-xl bg-[#FF915A] text-[#25331D] font-display font-bold grid place-items-center text-lg">4</span>
+        <span class="material-symbols-outlined text-[32px] mt-4 text-[#9B4413]">local_shipping</span>
+        <h3 class="font-display font-bold text-[18px] mt-2">Barang Dikirim</h3>
+        <p class="text-sm text-[#444840] mt-1.5 leading-relaxed">Dikirim via JNE, J&T, SiCepat lengkap dengan nomor resi pelacakan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. TENTANG ============ -->
+<section id="tentang" class="bg-[#F6FBEF]">
+  <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20 grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+    <div id="tentangPhoto" class="relative">
+      <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1000&auto=format&fit=crop" alt="Interior butik Thrift Corner Bandung" class="rounded-[24px] w-full aspect-[4/3] object-cover shadow-[0_24px_60px_-24px_rgba(37,51,29,.4)]" loading="lazy" />
+      <span id="tentangBadge" class="absolute -bottom-5 left-6 inline-flex items-center gap-2 bg-white rounded-full pl-3 pr-5 py-2.5 shadow-lg text-sm font-bold"><span class="w-9 h-9 rounded-full bg-[#D6E8C7] grid place-items-center"><span class="material-symbols-outlined text-[#25331D]">workspace_premium</span></span> Est. 2021 — Bandung</span>
+    </div>
+    <div id="tentangText">
+      <p class="font-display text-[12px] font-bold uppercase tracking-[0.22em] text-[#9B4413]">Tentang Kurasi</p>
+      <h2 class="font-display font-bold tracking-tight text-[28px] lg:text-[32px] mt-2">Cerita di Balik Thrift Corner</h2>
+      <p class="text-[#444840] text-[15px] leading-relaxed mt-4">Berawal dari lapak kecil di Bandung tahun 2021, kami berburu pakaian arsip ke berbagai kota — menyelamatkan jaket, denim, dan dress berkualitas dari tumpukan limbah fesyen. Kami menolak fast fashion: setiap potong dikurasi manual, dicuci higienis, diukur presisi, dan difoto apa adanya. Biar kamu tampil beda tanpa bikin bumi repot.</p>
+      <div class="grid sm:grid-cols-3 lg:grid-cols-3 gap-3 mt-6">
+        <div class="bg-white border border-[#E5EADF] rounded-[18px] p-4"><span class="material-symbols-outlined text-[#25331D] text-[28px]">dry_cleaning</span><p class="font-bold text-sm mt-2 leading-snug">Dikurasi Manual & Siap Pakai</p></div>
+        <div class="bg-white border border-[#E5EADF] rounded-[18px] p-4"><span class="material-symbols-outlined text-[#25331D] text-[28px]">eco</span><p class="font-bold text-sm mt-2 leading-snug">Ramah Lingkungan</p></div>
+        <div class="bg-white border border-[#E5EADF] rounded-[18px] p-4"><span class="material-symbols-outlined text-[#25331D] text-[28px]">straighten</span><p class="font-bold text-sm mt-2 leading-snug">Harga Jujur & Pengukuran Presisi</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. TESTIMONI ============ -->
+<section id="testimoni" class="bg-[#F1F5EA]">
+  <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
+    <div data-rv class="text-center max-w-2xl mx-auto">
+      <p class="font-display text-[12px] font-bold uppercase tracking-[0.22em] text-[#9B4413]">Kata Mereka</p>
+      <h2 class="font-display font-bold tracking-tight text-[28px] lg:text-[32px] mt-2">Cerita Pelanggan Thrift Corner</h2>
+      <div class="mt-4 inline-flex flex-wrap justify-center items-center gap-3 bg-white rounded-full pl-5 pr-3 py-2 shadow-sm border border-[#E5EADF]">
+        <span class="font-display font-bold"><span id="ratingNum" data-countup="4.9" data-decimals="1">4.9</span> / 5</span>
+        <span class="flex text-[#FF915A]" aria-label="Rating 5 dari 5">
+          <span class="material-symbols-outlined fill text-[20px]">star</span><span class="material-symbols-outlined fill text-[20px]">star</span><span class="material-symbols-outlined fill text-[20px]">star</span><span class="material-symbols-outlined fill text-[20px]">star</span><span class="material-symbols-outlined fill text-[20px]">star</span>
+        </span>
+        <span class="text-[13px] text-[#444840]">Berdasarkan <span id="ulasanNum" data-countup="128">128</span>+ ulasan pelanggan terverifikasi</span>
+        <a href="#form-ulasan" class="bg-[#FF915A] text-[#25331D] text-sm font-bold px-5 py-2.5 rounded-full hover:brightness-105 min-h-[40px]">Tulis Ulasan</a>
+      </div>
+    </div>
+    <div data-stagger class="grid md:grid-cols-3 gap-4 mt-8">
+      <figure class="bg-white rounded-[20px] p-6 shadow-[0_8px_24px_-12px_rgba(37,51,29,.25)] flex flex-col">
+        <div class="flex text-[#FF915A]"><span class="material-symbols-outlined fill text-[18px]">star</span><span class="material-symbols-outlined fill text-[18px]">star</span><span class="material-symbols-outlined fill text-[18px]">star</span><span class="material-symbols-outlined fill text-[18px]">star</span><span class="material-symbols-outlined fill text-[18px]">star</span></div>
+        <blockquote class="italic text-[15px] leading-relaxed mt-3 flex-1">“Detroit Jacket-nya mulus banget, jahitan rapi kayak baru. Pengukurannya akurat, size M pas di badan. Admin juga gercep!”</blockquote>
+        <figcaption class="flex items-center gap-3 mt-5 pt-4 border-t border-[#E5EADF]">
+          <img src="https://i.pravatar.cc/80?img=12" alt="Dimas" class="w-10 h-10 rounded-full object-cover" loading="lazy" />
+          <div class="flex-1"><p class="font-bold text-sm">Dimas R. — Jakarta Selatan</p></div>
+          <span class="text-[11px] font-display font-bold uppercase tracking-wider bg-[#D6E8C7] text-[#25331D] px-3 py-1.5 rounded-full">Detroit Jacket</span>
+        </figcaption>
+      </figure>
+      <figure class="bg-white rounded-[20px] p-6 shadow-[0_8px_24px_-12px_rgba(37,51,29,.25)] flex flex-col">
+        <div class="flex text-[#FF915A]"><span class="material-symbols-outlined fill text-[18px]">star</span><span class="material-symbols-outlined fill text-[18px]">star</span><span class="material-symbols-outlined fill text-[18px]">star</span><span class="material-symbols-outlined fill text-[18px]">star</span><span class="material-symbols-outlined fill text-[18px]">star</span></div>
+        <blockquote class="italic text-[15px] leading-relaxed mt-3 flex-1">“Floral dress-nya wangi, bersih, motifnya persis kayak foto. Dikirim ke Bandung sehari sampai. Bakal langganan sih ini!”</blockquote>
+        <figcaption class="flex items-center gap-3 mt-5 pt-4 border-t border-[#E5EADF]">
+          <img src="https://i.pravatar.cc/80?img=47" alt="Sarah" class="w-10 h-10 rounded-full object-cover" loading="lazy" />
+          <div class="flex-1"><p class="font-bold text-sm">Sarah Annisa — Bandung</p></div>
+          <span class="text-[11px] font-display font-bold uppercase tracking-wider bg-[#FFDBCC] text-[#9B4413] px-3 py-1.5 rounded-full">Floral Dress</span>
+        </figcaption>
+      </figure>
+      <figure class="bg-white rounded-[20px] p-6 shadow-[0_8px_24px_-12px_rgba(37,51,29,.25)] flex flex-col">
+        <div class="flex text-[#FF915A]"><span class="material-symbols-outlined fill text-[18px]">star</span><span class="material-symbols-outlined fill text-[18px]">star</span><span class="material-symbols-outlined fill text-[18px]">star</span><span class="material-symbols-outlined fill text-[18px]">star</span><span class="material-symbols-outlined fill text-[18px]">star</span></div>
+        <blockquote class="italic text-[15px] leading-relaxed mt-3 flex-1">“Levi’s 501 USA 90s dapat di harga segini tuh rejeki banget. Kondisi jujur sesuai catatan admin. Recommended seller!”</blockquote>
+        <figcaption class="flex items-center gap-3 mt-5 pt-4 border-t border-[#E5EADF]">
+          <img src="https://i.pravatar.cc/80?img=33" alt="Reza" class="w-10 h-10 rounded-full object-cover" loading="lazy" />
+          <div class="flex-1"><p class="font-bold text-sm">Reza Pratama — Surabaya</p></div>
+          <span class="text-[11px] font-display font-bold uppercase tracking-wider bg-[#D6E8C7] text-[#25331D] px-3 py-1.5 rounded-full">Levi's 501</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- FORM ULASAN -->
+    <div id="form-ulasan" class="max-w-[672px] mx-auto mt-10 bg-white rounded-[24px] p-6 sm:p-8 shadow-[0_20px_50px_-20px_rgba(37,51,29,.3)] border border-[#E5EADF]">
+      <h3 class="font-display font-bold text-[22px] tracking-tight text-center">Bagikan Pengalaman Belanjamu</h3>
+      <p class="text-center text-sm text-[#444840] mt-1">Ulasanmu membantu pembeli lain dan bikin kami makin semangat.</p>
+      <div id="formSuccess" class="hidden mt-5 flex items-start gap-3 bg-[#D6E8C7]/60 border border-[#25331D]/20 rounded-2xl p-4 text-sm font-semibold text-[#25331D]">
+        <span class="material-symbols-outlined">check_circle</span><span>Terima kasih! Ulasanmu sudah kami terima.</span>
+      </div>
+      <form id="reviewForm" class="mt-6 grid gap-4" novalidate>
+        <div>
+          <label for="nama" class="text-sm font-bold">Nama Lengkap *</label>
+          <input id="nama" name="nama" type="text" placeholder="cth: Nadia Putri" class="mt-1.5 w-full rounded-2xl border border-[#C5C8BD] px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#25331D] focus:border-[#25331D] min-h-[48px]" />
+          <p class="err hidden text-[13px] text-[#BA1A1A] mt-1" data-err="nama">Nama wajib diisi ya.</p>
+        </div>
+        <div>
+          <label for="kontakUser" class="text-sm font-bold">Nomor WhatsApp / Username Instagram <span class="font-normal text-[#75786F]">(opsional)</span></label>
+          <input id="kontakUser" type="text" placeholder="cth: 0812xxxx / @namamu" class="mt-1.5 w-full rounded-2xl border border-[#C5C8BD] px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#25331D] focus:border-[#25331D] min-h-[48px]" />
+        </div>
+        <div>
+          <label for="barang" class="text-sm font-bold">Barang yang Dibeli</label>
+          <select id="barang" class="mt-1.5 w-full rounded-2xl border border-[#C5C8BD] px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-[#25331D] min-h-[48px]">
+            <option>Atasan (Tee, Flannel, Polo)</option>
+            <option>Bawahan (Cargo, Denim, Korduroi)</option>
+            <option>Jaket & Outer</option>
+            <option>Dress</option>
+            <option>Tas</option>
+            <option>Aksesoris</option>
+          </select>
+        </div>
+        <div>
+          <p class="text-sm font-bold">Rating Kepuasan *</p>
+          <div class="flex items-center gap-1 mt-2" id="starPicker" role="radiogroup" aria-label="Rating">
+            <button type="button" data-star="1" class="star-btn p-1 min-w-[44px] min-h-[44px]" aria-label="Bintang 1"><span class="material-symbols-outlined text-[30px] text-[#C5C8BD]">star</span></button>
+            <button type="button" data-star="2" class="star-btn p-1 min-w-[44px] min-h-[44px]" aria-label="Bintang 2"><span class="material-symbols-outlined text-[30px] text-[#C5C8BD]">star</span></button>
+            <button type="button" data-star="3" class="star-btn p-1 min-w-[44px] min-h-[44px]" aria-label="Bintang 3"><span class="material-symbols-outlined text-[30px] text-[#C5C8BD]">star</span></button>
+            <button type="button" data-star="4" class="star-btn p-1 min-w-[44px] min-h-[44px]" aria-label="Bintang 4"><span class="material-symbols-outlined text-[30px] text-[#C5C8BD]">star</span></button>
+            <button type="button" data-star="5" class="star-btn p-1 min-w-[44px] min-h-[44px]" aria-label="Bintang 5"><span class="material-symbols-outlined text-[30px] text-[#C5C8BD]">star</span></button>
+            <span id="starLabel" class="ml-2 text-sm font-semibold text-[#444840]">Ketuk bintang</span>
+          </div>
+          <p class="err hidden text-[13px] text-[#BA1A1A] mt-1" data-err="rating">Pilih rating dulu ya.</p>
+        </div>
+        <div>
+          <label for="ulasan" class="text-sm font-bold">Ulasan Kamu *</label>
+          <textarea id="ulasan" rows="4" placeholder="Ceritakan kualitas barang, kesesuaian ukuran, dan pelayanan admin…" class="mt-1.5 w-full rounded-2xl border border-[#C5C8BD] px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#25331D] focus:border-[#25331D]"></textarea>
+          <p class="text-[12px] text-[#75786F] mt-1">Minimal 20 karakter. <span id="charCount">0</span>/500</p>
+          <p class="err hidden text-[13px] text-[#BA1A1A] mt-1" data-err="ulasan">Ulasan minimal 20 karakter ya.</p>
+        </div>
+        <div>
+          <p class="text-sm font-bold">Upload Foto Barang</p>
+          <label id="dropArea" for="foto" class="mt-1.5 flex flex-col items-center justify-center gap-1.5 rounded-2xl border-2 border-dashed border-[#C5C8BD] bg-[#F6FBEF] px-4 py-8 text-center cursor-pointer hover:border-[#25331D] transition">
+            <span class="material-symbols-outlined text-[32px] text-[#25331D]">add_photo_alternate</span>
+            <span class="text-sm font-bold">Klik atau seret foto ke sini</span>
+            <span class="text-[12px] text-[#75786F]">JPG / PNG / WEBP, max 5MB</span>
+            <img id="fotoPreview" alt="" class="hidden w-24 h-24 object-cover rounded-2xl mt-2" />
+          </label>
+          <input id="foto" type="file" accept=".jpg,.jpeg,.png,.webp" class="hidden" />
+          <p class="err hidden text-[13px] text-[#BA1A1A] mt-1" data-err="foto">File harus JPG/PNG/WEBP dan max 5MB.</p>
+        </div>
+        <label class="flex items-start gap-3 text-[13px] text-[#444840] cursor-pointer">
+          <input id="setuju" type="checkbox" class="mt-1 w-5 h-5 accent-[#25331D]" />
+          <span>Saya setuju ulasan dan foto ini ditampilkan di website Thrift Corner untuk keperluan testimoni.</span>
+        </label>
+        <p class="err hidden text-[13px] text-[#BA1A1A]" data-err="setuju">Centang persetujuan dulu ya.</p>
+        <button type="submit" class="w-full inline-flex justify-center items-center gap-2 bg-[#25331D] text-white font-bold text-[15px] px-6 py-4 rounded-full hover:bg-[#3B4A32] transition min-h-[52px]"><span class="material-symbols-outlined">send</span> Kirim Ulasan</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. KONTAK ============ -->
+<section id="kontak" class="bg-[#F6FBEF]">
+  <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
+    <p data-rv class="font-display text-[12px] font-bold uppercase tracking-[0.22em] text-[#9B4413]">Hubungi Kami</p>
+    <h2 data-rv class="font-display font-bold tracking-tight text-[28px] lg:text-[32px] mt-2 mb-8">Konsultasi & Kunjungan Studio</h2>
+    <div class="grid lg:grid-cols-2 gap-4">
+      <div data-rv class="bg-white rounded-[24px] p-6 sm:p-8 border border-[#E5EADF] shadow-[0_8px_24px_-12px_rgba(37,51,29,.25)]">
+        <div data-stagger class="grid gap-4">
+          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="contact-row flex items-center gap-4 p-3 rounded-2xl hover:bg-[#F1F5EA] transition">
+            <span class="w-12 h-12 rounded-2xl bg-[#D6E8C7] grid place-items-center shrink-0"><span class="material-symbols-outlined text-[#25331D]">chat</span></span>
+            <span><span class="font-bold text-[15px] block">WhatsApp +62 812-3456-7890</span><span class="text-[13px] text-[#75786F]">Fast respon 09.00–21.00 WIB</span></span>
+          </a>
+          <a href="https://instagram.com/thriftcorner.id" target="_blank" rel="noopener" class="contact-row flex items-center gap-4 p-3 rounded-2xl hover:bg-[#F1F5EA] transition">
+            <span class="w-12 h-12 rounded-2xl bg-[#FFDBCC] grid place-items-center shrink-0"><span class="material-symbols-outlined text-[#9B4413]">photo_camera</span></span>
+            <span><span class="font-bold text-[15px] block">Instagram @thriftcorner.id</span><span class="text-[13px] text-[#75786F]">Drop terbaru & try-on harian</span></span>
+          </a>
+          <div class="contact-row flex items-center gap-4 p-3 rounded-2xl">
+            <span class="w-12 h-12 rounded-2xl bg-[#25331D] grid place-items-center shrink-0"><span class="material-symbols-outlined text-white">music_note</span></span>
+            <span><span class="font-bold text-[15px] block">TikTok @thriftcorner_vintage</span><span class="text-[13px] text-[#75786F]">Live try-on Jumat & Sabtu malam</span></span>
+          </div>
+          <div class="contact-row flex items-center gap-4 p-3 rounded-2xl">
+            <span class="w-12 h-12 rounded-2xl bg-[#EBF0E4] grid place-items-center shrink-0"><span class="material-symbols-outlined text-[#25331D]">storefront</span></span>
+            <span><span class="font-bold text-[15px] block">Offline Showroom Bandung</span><span class="text-[13px] text-[#75786F]">Jl. Riau No. 42, Citarum, Bandung • 10.00–22.00 WIB</span></span>
+          </div>
+        </div>
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Thrift%20Corner!%20Saya%20mau%20konsultasi%20ukuran." target="_blank" rel="noopener" class="mt-6 w-full inline-flex justify-center items-center gap-2.5 bg-[#25331D] text-white font-bold px-6 py-4 rounded-full hover:bg-[#3B4A32] transition min-h-[52px]">
+          <span class="relative flex w-2.5 h-2.5"><span class="pulse-dot absolute inline-flex w-full h-full rounded-full bg-[#7CFC9A]"></span><span class="relative inline-flex w-2.5 h-2.5 rounded-full bg-[#7CFC9A]"></span></span>
+          Chat Admin WhatsApp Sekarang
+        </a>
+      </div>
+      <div data-rv class="bg-[#25331D] text-white rounded-[24px] p-6 sm:p-8 shadow-[0_24px_60px_-24px_rgba(37,51,29,.5)]">
+        <div class="flex items-center justify-between gap-3 flex-wrap">
+          <h3 class="font-display font-bold text-[20px]">Studio & Showroom Thrift Corner</h3>
+          <a href="https://maps.google.com/?q=Jl.+Riau+No.+42,+Citarum,+Bandung" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 bg-white text-[#25331D] text-[13px] font-bold px-4 py-2.5 rounded-full min-h-[44px]"><span class="material-symbols-outlined text-[18px]">map</span> Buka di Google Maps</a>
+        </div>
+        <div class="relative mt-5 rounded-[20px] overflow-hidden">
+          <iframe title="Peta Thrift Corner Bandung" src="https://maps.google.com/maps?q=Jl.%20Riau%20No.%2042%20Citarum%20Bandung&t=&z=15&ie=UTF8&iwloc=&output=embed" class="w-full h-[280px] border-0" loading="lazy"></iframe>
+          <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 bg-white text-[#25331D] text-[12px] font-bold px-3.5 py-2 rounded-full shadow"><span class="material-symbols-outlined text-[16px] text-[#BA1A1A]">location_on</span> Jl. Riau No. 42, Bandung</span>
+        </div>
+        <div class="mt-4 flex gap-4 bg-white/10 border border-white/15 rounded-[20px] p-4">
+          <img src="https://images.unsplash.com/photo-1560243563-062bfc001d68?q=80&w=400&auto=format&fit=crop" alt="Fitting room Thrift Corner" class="w-24 h-24 rounded-2xl object-cover shrink-0" loading="lazy" />
+          <p class="text-[13.5px] text-white/85 leading-relaxed">Fitting room ber-AC, free wifi, free refill tote bag untuk pembelian di atas Rp 300.000. Mampir, ngopi, coba-coba dulu juga boleh!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ 9. FOOTER ============ -->
+<footer class="bg-[#25331D] text-white">
+  <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-6">
+    <div data-rv class="grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-2.5">
+          <span class="w-10 h-10 rounded-2xl bg-[#F6FBEF] text-[#25331D] grid place-items-center font-display font-bold text-xl">T</span>
+          <span class="font-display font-bold tracking-tight text-lg">THRIFT CORNER</span>
+        </div>
+        <p class="text-white/70 text-sm mt-3 max-w-xs leading-relaxed">Vintage & streetwear orisinal pilihan dari Bandung. Kurasi manual, harga jujur, kirim ke seluruh Indonesia.</p>
+        <div class="flex gap-2.5 mt-4">
+          <a href="https://instagram.com/thriftcorner.id" target="_blank" rel="noopener" aria-label="Instagram" class="w-11 h-11 rounded-full bg-white/10 grid place-items-center hover:bg-[#FF915A] hover:text-[#25331D] transition min-w-[44px] min-h-[44px]"><span class="material-symbols-outlined">photo_camera</span></a>
+          <a href="https://tiktok.com/@thriftcorner_vintage" target="_blank" rel="noopener" aria-label="TikTok" class="w-11 h-11 rounded-full bg-white/10 grid place-items-center hover:bg-[#FF915A] hover:text-[#25331D] transition min-w-[44px] min-h-[44px]"><span class="material-symbols-outlined">music_note</span></a>
+          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-11 h-11 rounded-full bg-white/10 grid place-items-center hover:bg-[#FF915A] hover:text-[#25331D] transition min-w-[44px] min-h-[44px]"><span class="material-symbols-outlined">chat</span></a>
+        </div>
+      </div>
+      <nav aria-label="Navigasi Halaman">
+        <h3 class="font-display font-bold text-[12px] uppercase tracking-[0.2em] text-[#FF915A]">Navigasi Halaman</h3>
+        <ul class="mt-4 grid grid-cols-2 gap-x-4 gap-y-2.5 text-sm font-semibold text-white/85">
+          <li><a href="#beranda" class="hover:text-white">Beranda</a></li>
+          <li><a href="#kategori" class="hover:text-white">Kategori</a></li>
+          <li><a href="#koleksi" class="hover:text-white">Koleksi</a></li>
+          <li><a href="#cara-belanja" class="hover:text-white">Cara Belanja</a></li>
+          <li><a href="#tentang" class="hover:text-white">Tentang Kami</a></li>
+          <li><a href="#testimoni" class="hover:text-white">Testimoni</a></li>
+          <li><a href="#kontak" class="hover:text-white">Kontak</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3 class="font-display font-bold text-[12px] uppercase tracking-[0.2em] text-[#FF915A]">Metode Pembayaran</h3>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="text-[12px] font-bold bg-white/10 border border-white/15 px-3.5 py-2 rounded-full">BCA</span>
+          <span class="text-[12px] font-bold bg-white/10 border border-white/15 px-3.5 py-2 rounded-full">Mandiri</span>
+          <span class="text-[12px] font-bold bg-white/10 border border-white/15 px-3.5 py-2 rounded-full">QRIS</span>
+          <span class="text-[12px] font-bold bg-white/10 border border-white/15 px-3.5 py-2 rounded-full">GoPay</span>
+          <span class="text-[12px] font-bold bg-white/10 border border-white/15 px-3.5 py-2 rounded-full">ShopeePay</span>
+        </div>
+        <h3 class="font-display font-bold text-[12px] uppercase tracking-[0.2em] text-[#FF915A] mt-5">Partner Ekspedisi</h3>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="text-[12px] font-bold bg-white/10 border border-white/15 px-3.5 py-2 rounded-full">JNE Reg / YES</span>
+          <span class="text-[12px] font-bold bg-white/10 border border-white/15 px-3.5 py-2 rounded-full">SiCepat</span>
+          <span class="text-[12px] font-bold bg-white/10 border border-white/15 px-3.5 py-2 rounded-full">J&T Express</span>
+          <span class="text-[12px] font-bold bg-white/10 border border-white/15 px-3.5 py-2 rounded-full">Gosend Bandung</span>
+        </div>
+      </div>
+    </div>
+    <div class="mt-10 pt-5 border-t border-white/15 flex flex-col sm:flex-row items-center justify-between gap-2 text-[13px] text-white/60">
+      <p>© 2026 Thrift Corner Store. Hak Cipta Dilindungi.</p>
+      <p>Curated in Bandung, Indonesia</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING -->
+<div id="floatWrap" class="fixed bottom-5 right-5 z-40 flex items-center gap-2.5">
+  <span id="floatPill" class="hidden md:inline-block bg-white shadow-lg border border-[#E5EADF] text-sm font-bold px-4 py-2.5 rounded-full">Tanya Stok? Chat Kami</span>
+  <a href="https://wa.me/6281234567890?text=Halo%20Thrift%20Corner!%20Saya%20mau%20tanya%20stok." target="_blank" rel="noopener" aria-label="Chat WhatsApp" class="w-14 h-14 rounded-full bg-[#25331D] text-white grid place-items-center shadow-xl hover:bg-[#3B4A32] hover:scale-105 transition min-w-[56px] min-h-[56px]">
+    <span class="material-symbols-outlined text-[28px]">chat</span>
+  </a>
+</div>
+
+<!-- ============ 4. PRODUCT MODAL ============ -->
+<div id="productModal" class="fixed inset-0 z-[60] hidden items-center justify-center p-3 sm:p-6" role="dialog" aria-modal="true" aria-label="Detail produk">
+  <div id="modalBackdrop" class="absolute inset-0 bg-[#10160e]/65 backdrop-blur-sm"></div>
+  <div class="relative w-full max-w-[896px] max-h-[92vh] overflow-y-auto bg-[#F1F5EA] rounded-[24px] shadow-2xl">
+    <button id="modalClose" aria-label="Tutup" class="sticky top-4 ml-auto mr-4 flex w-11 h-11 rounded-full bg-white shadow grid place-items-center hover:bg-[#EBF0E4] z-10 min-w-[44px] min-h-[44px]"><span class="material-symbols-outlined">close</span></button>
+    <div id="modalContent" class="px-5 pb-6 sm:px-7 sm:pb-7 -mt-6"></div>
+  </div>
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html>
